@@ -50,6 +50,11 @@ share/config.o: share/config.cpp
 	g++ -c -o share/config.o share/config.cpp
 
 
+install:
+	cp terrarium /usr/local/bin
+
+uninstall:
+	rm /usr/local/bin/terrarium
 
 
 clean:
